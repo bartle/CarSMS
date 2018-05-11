@@ -1,4 +1,4 @@
-# CarSMS app for Android 2
+# CarSMS app for Android
 ##  A simple and functional application for transferring your location via SMS
 
 ![app download screen ](https://sun9-7.userapi.com/c840721/v840721990/81f84/slzbe7_6yco.jpg)
