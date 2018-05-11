@@ -1,0 +1,65 @@
+{
+  "_from": "git+https://github.com/cordova-sms/cordova-sms-plugin.git",
+  "_id": "cordova-sms-plugin@0.1.11",
+  "_inBundle": false,
+  "_integrity": "sha1-8AQo+42gNqkvmB3Vo0v7ZG9KZZo=",
+  "_location": "/cordova-sms-plugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/cordova-sms/cordova-sms-plugin.git",
+    "rawSpec": "https://github.com/cordova-sms/cordova-sms-plugin.git",
+    "saveSpec": "git+https://github.com/cordova-sms/cordova-sms-plugin.git",
+    "fetchSpec": "https://github.com/cordova-sms/cordova-sms-plugin.git",
+    "gitCommittish": "master"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/cordova-sms/cordova-sms-plugin.git#26ee2258b2f9c619e1327890f447d7936811d61b",
+  "_spec": "https://github.com/cordova-sms/cordova-sms-plugin.git",
+  "_where": "G:\\CarSMS",
+  "author": {
+    "name": "Didier Baquier"
+  },
+  "bugs": {
+    "url": "https://github.com/cordova-sms/cordova-sms-plugin/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-sms-plugin",
+    "platforms": [
+      "android",
+      "wp8",
+      "ios",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cross-platform plugin for Cordova / PhoneGap to to easily send SMS. Available for Android, iOS and WP.",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/cordova-sms/cordova-sms-plugin#readme",
+  "keywords": [
+    "cordova",
+    "phonegap",
+    "sms",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-wp8",
+    "cordova-ios",
+    "cordova-windows"
+  ],
+  "license": "MIT",
+  "name": "cordova-sms-plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cordova-sms/cordova-sms-plugin.git"
+  },
+  "version": "0.1.11"
+}

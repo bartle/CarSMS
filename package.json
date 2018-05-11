@@ -1,0 +1,25 @@
+{
+  "name": "carsms.bartle",
+  "version": "1.0.0",
+  "displayName": "CarSMS",
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-console": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-sms-plugin": {},
+      "cordova-plugin-geolocation": {}
+    }
+  },
+  "dependencies": {
+    "cordova-android": "~6.3.0",
+    "cordova-plugin-whitelist": "~1.2.0",
+    "cordova-plugin-console": "~1.0.1",
+    "cordova-plugin-statusbar": "~1.0.1",
+    "cordova-sms-plugin": "~1.0.1",
+    "cordova-plugin-geolocation": "^3.0.0"
+  }
+}

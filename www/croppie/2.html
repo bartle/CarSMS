@@ -1,0 +1,41 @@
+<html>  
+<head>  
+    <link href="croppie.css" rel="Stylesheet" />  
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+
+    <script src="croppie.js"></script>
+</head>  
+<body>
+
+    <div id="demo-basic"></div>
+
+    <script>
+        var basic = $('#demo-basic').croppie({
+            viewport: { width: 375, height: 667 },
+			showZoomer: false
+        });
+		
+		
+		
+		
+		
+        basic.croppie('bind', {
+            url: 'demo/cat.jpg',
+			ShowZoomer: false,
+        });
+
+		
+		var el = document.getElementById('demo-basic');
+		var vanilla = new Croppie(el, {
+			viewport: { width: 360, height: 640 },
+			showZoomer: false,
+		});
+		vanilla.bind({
+			url: 'demo/cat.jpg',
+			ShowZoomer: false
+		});
+		
+		
+    </script>
+</body>  
+</html>

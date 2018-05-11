@@ -1,0 +1,150 @@
+.swiper-container {
+  height: 100%;
+}
+.swiper-slide {
+  background: #000;
+  position: relative;
+}
+.swiper-slide img {
+  position: absolute;
+  left:50%;
+  top:50%;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+body {
+	moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+
+    touch-action: none;
+}
+
+
+.page>.navbar {
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+}
+
+
+.set .list-block {
+    margin: 10px 0 32px 0;
+}
+.set .list-block .list-block-label {
+    margin: 0;
+}
+.set .save {
+    margin: 0 auto;
+}
+
+.panel-left {
+	/*
+	background: #fff url('https://cs7062.userapi.com/c638023/v638023674/6185d/cIiJEjChC8o.jpg') bottom left no-repeat!important;
+	*/
+}
+
+textarea {
+	-webkit-user-select: auto !important;
+	-khtml-user-select: auto !important;
+	-moz-user-select: auto !important;
+	-ms-user-select: auto !important;
+	user-select: auto !important;
+}
+
+input , textarea {
+      -webkit-touch-callout: default;
+      -webkit-user-select: text;
+      user-select: text;
+}
+
+.statusbar-overlay {
+	background: #007fff;
+}
+
+
+
+.home .parent {
+    opacity: 4;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: auto;
+}
+
+.home .block {
+	width: 250px;
+	height: 82px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin: 10px 0 0 -125px;
+	text-align: center;
+
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+		border: none;
+	}
+
+	div {
+		color: #868686;
+	}
+}
+
+.home .block div {
+    color: #000000;
+    font-size: 25px;
+}
+
+.set .row {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.block-title {
+    text-transform: uppercase;
+    color: #6d6d72;
+    margin: 35px 15px 10px;
+    line-height: 17px;
+
+    position: relative;
+    overflow: hidden;
+  
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+.block-title-h1 {
+    text-transform: uppercase;
+    color: #6d6d72;
+    margin: 35px 15px 0 15px;
+    line-height: 1;
+
+    position: relative;
+    overflow: hidden;
+  
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 24px;
+}
+
+.block-inset {
+    margin-left: 15px;
+    margin-right: 15px;
+     line-height: 1;
+
+    margin-top: 10px;
+
+    color: #6d6d72;
+    background:  rgba(255, 157, 0, 0.7);
+    padding: 5px 5px;
+}

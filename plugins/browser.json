@@ -1,0 +1,27 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "CarSMS.bartle"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "CarSMS.bartle"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "CarSMS.bartle"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "CarSMS.bartle"
+        },
+        "cordova-sms-plugin": {
+            "PACKAGE_NAME": "CarSMS.bartle"
+        }
+    },
+    "dependent_plugins": {}
+}
