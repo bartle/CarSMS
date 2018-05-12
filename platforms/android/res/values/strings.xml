@@ -3,4 +3,7 @@
     <string name="app_name">CarSMS</string>
     <string name="launcher_name">@string/app_name</string>
     <string name="activity_name">@string/launcher_name</string>
+    <string name="account_name">@string/app_name</string>
+    <string name="account_type">com.CarSMS.android.account</string>
+    <string name="content_authority">com.CarSMS.android</string>
 </resources>

@@ -1,25 +1,28 @@
 {
-  "_from": "git+https://github.com/cordova-sms/cordova-sms-plugin.git",
+  "_from": "cordova-sms-plugin",
   "_id": "cordova-sms-plugin@0.1.11",
   "_inBundle": false,
-  "_integrity": "sha1-8AQo+42gNqkvmB3Vo0v7ZG9KZZo=",
+  "_integrity": "sha1-Lat6Qyw+6LvXxK3ILUBdDjQxMt8=",
   "_location": "/cordova-sms-plugin",
   "_phantomChildren": {},
   "_requested": {
-    "type": "git",
-    "raw": "https://github.com/cordova-sms/cordova-sms-plugin.git",
-    "rawSpec": "https://github.com/cordova-sms/cordova-sms-plugin.git",
-    "saveSpec": "git+https://github.com/cordova-sms/cordova-sms-plugin.git",
-    "fetchSpec": "https://github.com/cordova-sms/cordova-sms-plugin.git",
-    "gitCommittish": "master"
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-sms-plugin",
+    "name": "cordova-sms-plugin",
+    "escapedName": "cordova-sms-plugin",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "git+https://github.com/cordova-sms/cordova-sms-plugin.git#26ee2258b2f9c619e1327890f447d7936811d61b",
-  "_spec": "https://github.com/cordova-sms/cordova-sms-plugin.git",
-  "_where": "G:\\CarSMS",
+  "_resolved": "https://registry.npmjs.org/cordova-sms-plugin/-/cordova-sms-plugin-0.1.11.tgz",
+  "_shasum": "2dab7a432c3ee8bbd7c4adc82d405d0e343132df",
+  "_spec": "cordova-sms-plugin",
+  "_where": "C:\\Users\\Admin\\CarSMS",
   "author": {
     "name": "Didier Baquier"
   },

@@ -1,8 +1,8 @@
-# Cordova SMS Plugin
+#Cordova SMS Plugin
 
-Cross-platform plugin for Cordova / PhoneGap to to easily send SMS. Available for **Android**, **iOS**, **Windows Phone 8** and **Windows 10 Universal**.
+Cross-platform plugin for Cordova / PhoneGap to to easily send SMS. Available for **Android**, **iOS**, **Windows Phone 8** and **Windows 10 Universal (BETA)**.
 
-## Installing the plugin
+##Installing the plugin
 
 Using the Cordova CLI and NPM, run:
 
@@ -12,7 +12,7 @@ It is also possible to install via repo url directly (unstable), run :
 
     cordova plugin add https://github.com/cordova-sms/cordova-sms-plugin.git
 
-## Using the plugin
+##Using the plugin
 HTML
 
     <input id="numberTxt" placeholder="Enter mobile number" value="" type="tel" />
@@ -23,7 +23,7 @@ Javascript
 
     var app = {
         sendSms: function() {
-            var number = document.getElementById('numberTxt').value.toString(); /* iOS: ensure number is actually a string */
+            var number = document.getElementById('numberTxt').value;
             var message = document.getElementById('messageTxt').value;
             console.log("number=" + number + ", message= " + message);
   
@@ -42,7 +42,7 @@ Javascript
         }
     };
 
-On Android, two extra functions are exposed to know whether or not an app has permission and to request permission to send SMS (Android Marshmallow +).
+On Android, an extra function is exposed to know whether or not you have the permission to send a SMS (Android Marshmallow permission).
 
     var app = {
         checkSMSPermission: function() {
@@ -57,51 +57,33 @@ On Android, two extra functions are exposed to know whether or not an app has pe
             };
             var error = function (e) { alert('Something went wrong:' + e); };
             sms.hasPermission(success, error);
-        },
-        requestSMSPermission: function() {
-            var success = function (hasPermission) { 
-                if (!hasPermission) {
-                    sms.requestPermission(function() {
-                        console.log('[OK] Permission accepted')
-                    }, function(error) {
-                        console.info('[WARN] Permission not accepted')
-                        // Handle permission not accepted
-                    })
-                }
-            };
-            var error = function (e) { alert('Something went wrong:' + e); };
-            sms.hasPermission(success, error);
         }
     };
 
-## FAQ
-#### `sms` is undefined
+##FAQ
+####`sms` is undefined
 
 Please go through all the [closed issues about this subject](https://github.com/cordova-sms/cordova-sms-plugin/issues?q=is%3Aissue+is%3Aclosed+sms+label%3A%22sms+undefined%22). The issue is mostly coming from the way you installed the plugin, please double check everything before opening another issue.
 
-#### When building my project for android I get the following error: `cannot find symbol: cordova.hasPermission(string)`
+####When building my project for android I get the following error: `cannot find symbol: cordova.hasPermission(string)`
 
 You need to update `cordova-android` to the latest version (recommended), or at least to the version 5.1.1.
 
 `cordova platform update android` or `cordova platform update android@5.1.1` 
 
-#### Is the plugin available on [Adobe PhoneGap Build](https://build.phonegap.com)?
+####Is the plugin available on [Adobe PhoneGap Build](https://build.phonegap.com)?
 
-Yes, the plugin is available, please see instructions here: http://docs.phonegap.com/phonegap-build/configuring/plugins/. Use the npm or github source.
+Yes, the plugin is available, please see instructions here: https://build.phonegap.com/plugins/1999.
 
-#### How can I receive SMS?
+####How can I receive SMS?
 
 You can't receive SMS via this plugin. This plugin only sends SMS.
 
-#### Android immediately passes success back to app? 
+####Android immediately passes success back to app? 
 
 Please read [#issue 26](https://github.com/cordova-sms/cordova-sms-plugin/issues/26)
 
-#### iOS closes the SMS dialog instantly. What's wrong?
-
-Make sure the `number` argument passed is converted to string first using either `String(number)` or `number.toString()`. Notice that `toString()` won't work if the number argument is `null` or `undefined`.
-
-#### I get this error. What's wrong?
+####I get this error. What's wrong?
 
     compile:
         [javac] Compiling 4 source files to /Users/username/MyProject/platforms/android/bin/classes
@@ -132,17 +114,8 @@ The problem is that you need to make sure that you set the target to android-19 
 
 This isn't possible on iOS. It requires that you show the user the native sms composer, to be able to send an sms.
 
-
-## Donations
-
-If your app is successful or if you are working for a company, please consider donating some beer money :beer::
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/dbaq/10)
-
-Keep in mind that I am maintaining this repository on my free time so thank you for considering a donation. :+1:
-
-
-## Contributing
+Contributing
+============
 
 I believe that everything is working, feel free to put in an issue or to fork and make pull requests if you want to add a new feature.
 

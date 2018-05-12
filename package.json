@@ -1,25 +1,39 @@
 {
   "name": "carsms.bartle",
-  "version": "1.0.0",
   "displayName": "CarSMS",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-android": "^6.3.0",
+    "cordova-background-location-services": "git+https://github.com/pmwisdom/cordova-background-geolocation-services.git",
+    "cordova-plugin-geolocation": "^4.0.1",
+    "cordova-plugin-mauron85-background-geolocation": "^2.3.5",
+    "cordova-sms-plugin": "^0.1.11",
+    "hazems-cordova-plugin-sms": "git+https://github.com/hazems/cordova-sms-plugin.git"
+  },
   "cordova": {
+    "plugins": {
+      "cordova-sms-plugin": {},
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-mauron85-background-geolocation": {
+        "GOOGLE_PLAY_SERVICES_VERSION": "11+",
+        "ANDROID_SUPPORT_LIBRARY_VERSION": "23+",
+        "ICON": "@mipmap/icon",
+        "SMALL_ICON": "@mipmap/icon",
+        "ACCOUNT_NAME": "@string/app_name",
+        "ACCOUNT_LABEL": "@string/app_name",
+        "ACCOUNT_TYPE": "$PACKAGE_NAME.account",
+        "CONTENT_AUTHORITY": "$PACKAGE_NAME"
+      }
+    },
     "platforms": [
       "android"
-    ],
-    "plugins": {
-      "cordova-plugin-whitelist": {},
-      "cordova-plugin-console": {},
-      "cordova-plugin-statusbar": {},
-      "cordova-sms-plugin": {},
-      "cordova-plugin-geolocation": {}
-    }
-  },
-  "dependencies": {
-    "cordova-android": "~6.3.0",
-    "cordova-plugin-whitelist": "~1.2.0",
-    "cordova-plugin-console": "~1.0.1",
-    "cordova-plugin-statusbar": "~1.0.1",
-    "cordova-sms-plugin": "~1.0.1",
-    "cordova-plugin-geolocation": "^3.0.0"
+    ]
   }
 }

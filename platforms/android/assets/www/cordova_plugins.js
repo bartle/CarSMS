@@ -1,11 +1,11 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
   {
-    "id": "cordova-plugin-statusbar.statusbar",
-    "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
-    "pluginId": "cordova-plugin-statusbar",
+    "id": "cordova-sms-plugin.Sms",
+    "file": "plugins/cordova-sms-plugin/www/sms.js",
+    "pluginId": "cordova-sms-plugin",
     "clobbers": [
-      "window.StatusBar"
+      "window.sms"
     ]
   },
   {
@@ -23,22 +23,21 @@ module.exports = [
     "runs": true
   },
   {
-    "id": "cordova-sms-plugin.Sms",
-    "file": "plugins/cordova-sms-plugin/www/sms.js",
-    "pluginId": "cordova-sms-plugin",
+    "id": "cordova-plugin-mauron85-background-geolocation.backgroundGeolocation",
+    "file": "plugins/cordova-plugin-mauron85-background-geolocation/www/backgroundGeolocation.js",
+    "pluginId": "cordova-plugin-mauron85-background-geolocation",
     "clobbers": [
-      "window.sms"
+      "backgroundGeolocation"
     ]
   }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-  "cordova-plugin-console": "1.0.7",
-  "cordova-plugin-statusbar": "1.0.1",
-  "cordova-plugin-whitelist": "1.2.2",
-  "cordova-plugin-geolocation": "3.0.0",
-  "cordova-sms-plugin": "0.1.11"
+  "cordova-plugin-whitelist": "1.3.3",
+  "cordova-sms-plugin": "0.1.11",
+  "cordova-plugin-geolocation": "4.0.1",
+  "cordova-plugin-mauron85-background-geolocation": "2.3.5"
 };
 // BOTTOM OF METADATA
 });

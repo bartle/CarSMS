@@ -7,20 +7,17 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "CarSMS.bartle"
-        },
         "cordova-plugin-geolocation": {
-            "PACKAGE_NAME": "CarSMS.bartle"
+            "PACKAGE_NAME": "com.CarSMS.android"
         },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "CarSMS.bartle"
+        "cordova-plugin-mauron85-background-geolocation": {
+            "PACKAGE_NAME": "com.CarSMS.android"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "CarSMS.bartle"
+            "PACKAGE_NAME": "com.CarSMS.android"
         },
         "cordova-sms-plugin": {
-            "PACKAGE_NAME": "CarSMS.bartle"
+            "PACKAGE_NAME": "com.CarSMS.android"
         }
     },
     "dependent_plugins": {}
